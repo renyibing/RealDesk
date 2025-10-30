@@ -1,0 +1,19 @@
+{
+  "dart.lineLength": 80,
+  "editor.formatOnSave": true,
+  "editor.rulers": [80],
+  "files.exclude": {
+    "**/.dart_tool": true,
+    "**/.flutter-plugins": true,
+    "**/.flutter-plugins-dependencies": true,
+    "**/.packages": true,
+    "**/*.freezed.dart": true,
+    "**/*.g.dart": true
+  },
+  "search.exclude": {
+    "**/.dart_tool": true,
+    "**/*.freezed.dart": true,
+    "**/*.g.dart": true
+  }
+}
+

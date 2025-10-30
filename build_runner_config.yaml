@@ -1,0 +1,12 @@
+# Build runner configuration
+targets:
+  $default:
+    builders:
+      freezed:
+        options:
+          # Generate copyWith and toString methods
+          copyWith: true
+          equal: true
+          to_json: true
+          from_json: true
+

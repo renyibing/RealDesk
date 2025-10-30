@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "RealDesk (Debug)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/app/main.dart"
+    },
+    {
+      "name": "RealDesk (Profile)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/app/main.dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "RealDesk (Release)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/app/main.dart",
+      "flutterMode": "release"
+    }
+  ]
+}
+

@@ -1,0 +1,64 @@
+name: realdesk
+description: A cross-platform remote control client using Flutter and flutter_webrtc
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # WebRTC
+  flutter_webrtc: ^1.2.0
+  
+  # WebSocket
+  web_socket_channel: ^2.4.0
+  
+  # HTTP client
+  http: ^1.1.0
+  
+  # JSON serialization
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.9.0
+  
+  # State management
+  provider: ^6.1.1
+  
+  # Logging
+  logger: ^2.0.2
+  
+  # Path utilities
+  path_provider: ^2.1.1
+  shared_preferences: ^2.2.3
+  window_manager: ^0.3.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Linting
+  flutter_lints: ^3.0.0
+  
+  # Code generation
+  build_runner: ^2.4.0
+  freezed: ^2.4.5
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  
+  # Assets
+  # assets:
+  #   - images/
+  #   - icons/
+
+  # Fonts
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: fonts/Roboto-Regular.ttf
+  #       - asset: fonts/Roboto-Bold.ttf
+  #         weight: 700
+
