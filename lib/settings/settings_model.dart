@@ -2,18 +2,18 @@ class RealDeskSettings {
   static const List<Map<String, dynamic>> defaultIceServers = [
     {
       'urls': [
-        'turn:36.99.188.173:3479?transport=udp',
-        'turn:36.99.188.173:3479?transport=tcp',
+        'turn:36.99.188.174:3479?transport=udp',
+        'turn:36.99.188.174:3479?transport=tcp',
       ],
-      'username': 'yrxt',
-      'credential': 'yrxt@unionstech.cn',
+      'username': 'comma',
+      'credential': 'comma@xrcloud.net',
     },
     {'urls': 'stun:stun.l.google.com:19302'},
     {'urls': 'stun:stun1.l.google.com:19302'},
   ];
 
   static const String defaultIceServersJson =
-      '[{"urls":["turn:36.99.188.173:3479?transport=udp","turn:36.99.188.173:3479?transport=tcp"],"username":"yrxt","credential":"yrxt@unionstech.cn"},{"urls":"stun:stun.l.google.com:19302"},{"urls":"stun:stun1.l.google.com:19302"}]';
+      '[{"urls":["turn:36.99.188.174:3479?transport=udp","turn:36.99.188.174:3479?transport=tcp"],"username":"yrxt","credential":"yrxt@unionstech.cn"},{"urls":"stun:stun.l.google.com:19302"},{"urls":"stun:stun1.l.google.com:19302"}]';
 
   RealDeskSettings({
     this.insecure = false,
@@ -38,25 +38,26 @@ class RealDeskSettings {
   bool defaultMouseRelative;
 
   Map<String, dynamic> toMap() => {
-        'insecure': insecure,
-        'noGoogleStun': noGoogleStun,
-        'overrideIce': overrideIce,
-        'iceServersJson': iceServersJson,
-        'heartbeatSeconds': heartbeatSeconds,
-        'reconnectDelaySeconds': reconnectDelaySeconds,
-        'maxReconnectAttempts': maxReconnectAttempts,
-        'defaultShowMetrics': defaultShowMetrics,
-        'defaultMouseRelative': defaultMouseRelative,
-      };
+    'insecure': insecure,
+    'noGoogleStun': noGoogleStun,
+    'overrideIce': overrideIce,
+    'iceServersJson': iceServersJson,
+    'heartbeatSeconds': heartbeatSeconds,
+    'reconnectDelaySeconds': reconnectDelaySeconds,
+    'maxReconnectAttempts': maxReconnectAttempts,
+    'defaultShowMetrics': defaultShowMetrics,
+    'defaultMouseRelative': defaultMouseRelative,
+  };
 
   static RealDeskSettings fromMap(Map<String, dynamic> m) {
     return RealDeskSettings(
       insecure: m['insecure'] ?? false,
       noGoogleStun: m['noGoogleStun'] ?? false,
       overrideIce: m['overrideIce'] ?? false,
-      iceServersJson: (m['iceServersJson'] as String?)?.isNotEmpty == true
-          ? m['iceServersJson']
-          : RealDeskSettings.defaultIceServersJson,
+      iceServersJson:
+          (m['iceServersJson'] as String?)?.isNotEmpty == true
+              ? m['iceServersJson']
+              : RealDeskSettings.defaultIceServersJson,
       heartbeatSeconds: m['heartbeatSeconds'] ?? 5,
       reconnectDelaySeconds: m['reconnectDelaySeconds'] ?? 3,
       maxReconnectAttempts: m['maxReconnectAttempts'] ?? 3,
@@ -65,5 +66,3 @@ class RealDeskSettings {
     );
   }
 }
-
-
